@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Comparison Slider</title>
+
+        <link rel="stylesheet" href="blg/blg.css"/>
+        <script src="blg/blg.js" defer></script>
+    </head>
+    <body>
+        <div class="container info-container">
+            <h1>Image Comparison Slider</h1>
+            <p>A utility to create a comparison slider between two images.</p>
+        </div>
+        <div class="container how-to-container">
+            <h2>How to use</h2>
+            <ol>
+                <li>Import <code>blg.js</code> and <code>blg.css</code> in your project.</li>
+                <li>Add <code>blg-image-comp</code> in the div that contains the two images.</li>
+            </ol>
+        </div>
+        <hr>
+        <div class="container example-container">
+            <code>
+                <span class="elem">&lt;div</span> class=<span class="value">&quot;blg-image-comp&quot;</span><span class="elem">&gt;</span></br>
+                &nbsp;&nbsp;<span class="elem">&lt;img</span> src=<span class="value">&quot;assets/first-image.jpg&quot;</span> alt=<span class="value">&quot;First Image&quot;</span><span class="elem">/&gt;</span></br>
+                &nbsp;&nbsp;<span class="elem">&lt;img</span> src=<span class="value">&quot;assets/first-image.jpg&quot;</span> alt=<span class="value">&quot;First Image&quot;</span><span class="elem">/&gt;</span></br>
+                <span class="elem">&lt;/div&gt;</span>
+            </code>
+        </div>
+        <div class="outer-container">
+            <div class="blg-image-comp">
+                <img src="assets/first-image.jpg" alt="First Image"/>
+                <img src="assets/second-image.jpg" alt="Second Image"/>
+            </div>            
+        </div>
+        <span class="copyright">Copyright &#169 2022.</span>
+    </body>
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+    body {
+        font-family: Lato, sans-serif;
+        background: rgb(90, 174, 143);
+        margin: 0;
+    }
+    code {
+        display: inline-block;
+        color: rgb(255,255,255);
+        background: rgb(0,0,0);
+        padding: 2px 5px;
+    }
+    .container {
+        width: 50%;
+        margin: 30px auto;
+    }
+    .info-container {
+        text-align: center;
+    }
+    .info-container h1 {
+        font-weight: 900;
+    }
+    .info-container, .info-container h1 {
+        margin-top: 10px;
+    }
+    .info-container p {
+        font-style: italic;
+    }
+    .how-to-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .how-to-container li {
+        margin-bottom: 5px;
+    }
+    .how-to-container code {
+        margin: 0 3px;
+    }
+    .how-to-container h2 {
+        margin: 0;
+    }
+    .how-to-container h2::after {
+        content: '';
+        width: 80%;
+        border-top: 1px solid rgb(0, 0, 0);
+        height: 1px;
+        display: block;
+        margin: 10px auto;
+    }
+    .example-container {
+        display: flex;
+        justify-content: center;
+    }
+    .example-container code {
+        padding: 10px;
+        border: 1px solid rgb(255,255,255);
+    }
+    hr {
+        max-width: 600px;
+        color: rgb(255,255,255);
+        border-color: rgb(255,255,255);
+        border: none;
+        border-top: 1px solid;
+    }
+    .outer-container {
+        width: 75%;
+        margin: auto;
+    }
+    .copyright {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 10px 0;
+        font-weight: lighter;
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+    .elem {
+        color: rgb(28, 170, 255);
+    }
+    .value {
+        color: rgb(232, 126, 63);
+    }
+
+    @media screen and (max-width: 918px) {
+        .container {
+            width: 100%;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        hr {
+            width: 80%;
+        }
+    }
+</style>
