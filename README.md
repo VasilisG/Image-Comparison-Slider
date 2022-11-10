@@ -4,4 +4,4 @@ A script that converts a div with two `img` elements into a comparison slider.
 
 ## Demo
 
-For instructions and demo check here.
+For instructions and demo check [here](https://vasilisg.github.io/Image-Comparison-Slider/).
